@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Karthick — Projects</title>
+  <meta name="description" content="projects and Education of Karthick — Junior Developer">
+  <link rel="icon" href="img/images.png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./style.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  
+  <!-- Navigation -->
+  <nav class="navbar">
+    <h1><b>Portfolio</b></h1>
+  <div class="navbar-links">
+      <a href="home.html" class="navbar-link">Home</a>
+      <a href="about.html" class="navbar-link">About</a>
+      <a href="skills.html" class="navbar-link">Skills</a>
+      <a href="projects.html" class="navbar-link">Projects</a>
+      <a href="contact.html" class="navbar-link">Contact</a>
+    </div>
+
+    <!-- Mobile toggle -->
+    <div class="navbar-menu-toggle" onclick="showNavbar()">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+  </nav>
+
+  <!-- Side Navbar -->
+  <div class="side-navbar" id="sideNavbar">
+    <p style="text-align:right;" onclick="closeNavbar()">
+      <i class="fa-solid fa-xmark"></i>
+    </p>
+ <div class="navbar-links">
+      <a href="home.html" class="navbar-link">Home</a>
+      <a href="about.html" class="navbar-link">About</a>
+      <a href="skills.html" class="navbar-link">Skills</a>
+      <a href="projects.html" class="navbar-link">Projects</a>
+      <a href="contact.html" class="navbar-link">Contact</a>
+    </div>
+
+  </div>
+
+  <!-- Experience Section -->
+  <main>
+    <section class="projects">
+      <h2>My Projects</h2>
+      <div class="timeline">
+
+        <!-- Item 1 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3><p>E-commerce website</p></h3>
+            <span class="timeline-date">2024</span>
+            <p>I built Fashionhub E-commerce website with strong foundations in programming and web development.</p>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Internship — Web Development</h3>
+            <span class="timeline-date">2025</span>
+            <p>Worked on frontend projects using HTML, CSS, and JavaScript. Built responsive websites and improved UI performance.</p>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Freelance Projects</h3>
+            <span class="timeline-date">2025</span>
+            <p>Developed small-scale websites and applications for clients, focusing on clean UI, responsiveness, and functionality.</p>
+          </div>
+        </div>
+
+  <!-- Item 4 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3> Web Development</h3>
+            <span class="timeline-date">2025</span>
+            <p>Worked on backend projects using mySQL and JavaScript. Built responsive websites and improved UI performance.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  
+  <!-- JavaScript -->
+<script>
+  const menuToggle = document.querySelector(".navbar-menu-toggle");
+  const sideNavbar = document.querySelector(".side-navbar");
+  const closeBtn = document.querySelector(".side-navbar p i");
+
+  menuToggle.addEventListener("click", () => {
+    sideNavbar.classList.add("active");
+  });
+
+  closeBtn.addEventListener("click", () => {
+    sideNavbar.classList.remove("active");
+  });
+</script>
+
+
+</body>
+</html>
